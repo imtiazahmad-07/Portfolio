@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  background-color: #0f172a;
+  background-color: #0f172a !important;
   font-family: "Noto Sans", serif;
   margin: 0;
   padding: 0;
-  color: #94a9c9;
+  color: #94a9c9 !important;
 }
 
 .nav-bar {
@@ -60,7 +60,7 @@ body {
 .header-right i {
   font-size: 2rem;
 }
-.header-right button {
+.subscribe-btn{
   background: linear-gradient(to right, #519dae, #00f2ff);
   color: white;
   border: none;
@@ -132,4 +132,18 @@ body.dark {
 
 .nav-bar.dark {
     background-color: #000c27 !important;
+}
+
+
+/* Hero section */
+@media (min-width: 1069px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+}
+
+.hero-left h1{
+  font-weight: 1000;
+  font-size: 75px;
 }
