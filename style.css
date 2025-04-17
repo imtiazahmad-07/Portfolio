@@ -8,6 +8,7 @@ body {
   color: #94a9c9 !important;
 }
 
+
 .nav-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -42,11 +43,13 @@ body {
 
 .header-nav ul li {
   cursor: pointer;
-  transition: transform 1s ease-in-out;
+  padding-top: 10px;
+  font-size: 17px;
+  transition: transform 0.1s ease-in-out;
   color: rgb(143, 141, 191);
 }
 .header-nav ul li:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   color: #0ea5ea;
   font-weight: bold;
 }
