@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Imtiaz-Ahmad</title>
-</head>
+  </head>
 
-<body>
-
+  <body class="container-fluid">
     <header class="nav-bar">
-        <div class="header-logo">
-            <i class="fa-solid fa-user"></i>
-            <h1>Imtiaz</h1>
-        </div>
-        <div class="header-nav">
-            <ul class="nav-links">
-                <li>Home</li>
-                <li>About</li>
-                <li>Resume</li>
-                <li>Services</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="header-right">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-toggle-off toggle-btn"></i>  
-            <button>Subscribe</button>
-        </div>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            ☰
-        </button>
+      <div class="header-logo">
+        <i class="fa-solid fa-user"></i>
+        <h1>Imtiaz</h1>
+      </div>
+      <div class="header-nav">
+        <ul class="nav-links">
+          <li>Home</li>
+          <li>About</li>
+          <li>Resume</li>
+          <li>Services</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="header-right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-toggle-off toggle-btn"></i>
+        <button>Subscribe</button>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
     </header>
 
     <!-- Hero Section -->
     <section>
-        
+      <!-- Main Div -->
+
+      <div class="row">
+        <!-- Hero Section Left -->
+        <div class="col-lg ">
+          <p>Hello Everyone</p>
+          <h1>
+            I'm
+            <span>Imtiaz Ahmad</span>
+          </h1>
+          <p>
+            I'm a passionate Frontend Developer with a focus on building
+            responsive, user-friendly web applications using React. I enjoy
+            turning complex problems into clean, intuitive interfaces and
+            constantly explore new tools and best practices in modern web
+            development. With a strong foundation in JavaScript, HTML, CSS, and
+            a keen eye for design, I strive to deliver seamless user experiences
+            and efficient code.
+          </p>
+          <div>
+            <input type="email" placeholder="Type your email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <!-- Hero Section Right -->
+        <div class="col-lg"></div>
+      </div>
     </section>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
