@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -36,7 +45,7 @@
       <div class="header-right">
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-toggle-off toggle-btn"></i>
-        <button>Subscribe</button>
+        <button class="subscribe-btn">Subscribe</button>
       </div>
       <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
     </header>
@@ -45,15 +54,15 @@
     <section>
       <!-- Main Div -->
 
-      <div class="row">
+      <div class="row hero-section">
         <!-- Hero Section Left -->
-        <div class="col-lg ">
-          <p>Hello Everyone</p>
-          <h1>
-            I'm
-            <span>Imtiaz Ahmad</span>
+        <div class="col-lg hero-left">
+          <p class="text-secondary">Hello Everyone</p>
+          <h1 class="text-white">
+            I'm <br />
+            <span class="text-primary"> Imtiaz Ahmad </span>
           </h1>
-          <p>
+          <p class="text-secondary">
             I'm a passionate Frontend Developer with a focus on building
             responsive, user-friendly web applications using React. I enjoy
             turning complex problems into clean, intuitive interfaces and
@@ -62,9 +71,15 @@
             a keen eye for design, I strive to deliver seamless user experiences
             and efficient code.
           </p>
-          <div>
-            <input type="email" placeholder="Type your email" />
-            <button>Subscribe</button>
+          <div
+            class="border border-primary border-opacity-25 px-4 py-2 gap-5 d-flex rounded-pill w-75 bg-transparent"
+          >
+            <input
+              type="email"
+              placeholder="Type your email"
+              class="px-4 py-2 bg-transparent border-0"
+            />
+            <button class="subscribe-btn">Subscribe</button>
           </div>
         </div>
 
