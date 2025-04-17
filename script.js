@@ -39,3 +39,37 @@ toggleButton.addEventListener("click", () => {
         navBar.classList.remove("dark");
     }
 });
+
+
+// Dynamic Titles 
+const titles = ["Frontend Dev", "React Dev", "Imtiaz Ahmad"]
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+let titleEl = document.getElementById("title");
+
+function updateText(){
+    const current = titles[index];
+    if(isDeleting){
+        charIndex--;
+    } else{
+        charIndex++;
+    }
+
+    titleEl.textContent = current.substring(0,charIndex)
+
+    if(!isDeleting && charIndex == current.length){
+        isDeleting = true;
+        setTimeout(updateText, 1500);
+        return;
+    }
+    if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % titles.length;
+      }
+    setTimeout(updateText, isDeleting ? 60 : 100);
+
+}
+updateText();
+
