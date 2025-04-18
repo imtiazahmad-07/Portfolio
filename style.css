@@ -39,17 +39,20 @@ body {
   align-items: center;
   flex-basis: 1;
   gap: 2rem;
+  margin-top: 0.8rem;
 }
 
-.header-nav ul li {
+.header-nav ul li a{
   cursor: pointer;
   padding-top: 10px;
   font-size: 17px;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ;
   color: rgb(143, 141, 191);
+  text-decoration: none;
+  
 }
-.header-nav ul li:hover {
-  transform: scale(1.2);
+.header-nav ul li a:hover {
+  transform: scale(1.5);
   color: #0ea5ea;
   font-weight: bold;
 }
@@ -153,4 +156,22 @@ body.dark {
 
 .profile-img{
   filter: drop-shadow(0 0 15mm rgb(62, 77, 113));
+}
+
+/* About section */
+#about{
+  margin-top: 12rem;
+}
+
+/* My Skills */
+.on-hover{
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+  box-shadow: 0 0 40px rgb(149, 149, 149);
+  border-radius: 1rem;
+}
+.on-hover:hover{
+  background-color: rgb(36, 36, 82);
+  transform: scale(1.05);
+  color: white;
 }
