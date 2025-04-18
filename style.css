@@ -150,3 +150,7 @@ body.dark {
   font-weight: 1000;
   font-size: 75px;
 }
+
+.profile-img{
+  filter: drop-shadow(0 0 15mm rgb(62, 77, 113));
+}
